@@ -1,0 +1,410 @@
+
+body {
+    font-family: 'Calibri', serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+   }
+   
+   .container {
+    max-width: 2000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+   box-shadow: none;
+   }
+   
+   h2 {
+    text-align: center;
+    color: #333;
+    font-size: 35px;
+   }
+   
+   form {
+    text-align: center;
+    margin-bottom: 50px;
+   
+   }
+   
+   .status-met {
+    background-color: green;
+    color: white;
+   }
+   
+   .status-not-met {
+    background-color: red;
+    color: white;
+   }
+   
+   label {
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'arial', serif;
+   }
+   
+   input[type="text"] {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+   }
+   
+   input[type="submit"] {
+    padding: 8px 20px;
+    background-color: #ffd500;
+    color: white;
+    border: none;
+    font-size:15px;
+    font-weight: bolder;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   
+   input[type="submit"]:hover {
+    background-color: #03045e;
+   }
+   input[type="button"]:hover {
+    background-color: #03045e;
+   }
+   
+   ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+   }
+   
+   li {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    color: #a4161a;
+    font-weight:bold;
+   }
+   
+   li h3 {
+    margin-top: 0;
+    
+    
+   }
+   
+   li strong {
+    color: #333;
+    
+   }
+   input[type="button"] {
+    padding: 8px 20px;
+    background-color: #a4161a;
+    font-size:15px;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+   
+   .logo {
+    
+    margin-bottom: 20px; /* Adjust as needed */
+    margin-right:50px;
+    float:left;
+   }
+   
+   .logo img {
+    position: absolute;
+   top: 8px;
+   right: 16px;
+   font-size: 18px;
+   max-width:15%; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+    
+   }
+   @media print {
+    form { display: none; }
+    .container {
+        box-shadow: none !important;
+    }
+   }
+   
+   /* CSS for desktop screens */
+   @media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px; /* Adjust as needed */
+    }
+   }
+   
+   .logout-button:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+   }
+   
+   
+   table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse;
+    border: 2px solid white;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px;
+   }
+   
+   th, td {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    width: calc(100% / 9); /* Divide the table width equally among 9 columns */
+   }
+   
+   th {
+    background-color: #1b4965;
+    color: white;
+    text-align: center;
+   }
+   
+   h2 {
+    text-align: center;
+    color: #1b4965;
+    font-size: 50px;
+    font-family: 'Prata', serif;
+   }
+   
+   
+   .logo {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+   }
+   
+   .logo img {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    max-width: 14%; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+   }
+   
+   body {
+    font-family: 'calibri', serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+   }
+   
+   .container {
+   width: 100%;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+   }
+   
+   form {
+    display:flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+   text-align: center;
+    margin-bottom: 50px;
+   }
+   #blue {
+            background-color: blue; 
+            color: white;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+   
+        #green {
+            background-color: green; 
+            color: white;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        #darkorange {
+            background-color: darkorange; 
+            color: white;
+            font-size: 15px;
+            font-weight: bolder;
+        }
+   
+        #gold {
+           background-color: gold; 
+           color: white;
+           font-size: 15px;
+           font-weight: bolder;
+       }
+   
+   @media print {
+    form {
+        display: none;
+    }
+    .container {
+        max-width: 2000px; /* Adjust as needed */
+    }
+   }      
+    table td:nth-child(10),
+    table th:nth-child(10) {
+        display: none; /* Hides the 9th column which is assumed to be "action" */
+    }
+    .result-container {
+       
+       left: 20px;
+       top: 100px;
+       width: 250px;
+       background-color: #f4f4f4;
+       padding: 10px;
+       border-radius: 5px;
+       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+       font-size: 14px;
+   }
+   .result-container h3 {
+       font-size: 16px;
+       margin-bottom: 10px;
+   }
+   .result-container ul {
+       list-style-type: none;
+       padding: 0;
+   }
+   .result-container li {
+       margin-bottom: 8px;
+   }
+   
+   .result-container {
+       
+       left: 20px;
+       top: 100px;
+       width: 250px;
+       background-color: #f4f4f4;
+       padding: 10px;
+       border-radius: 5px;
+       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+       font-size: 14px;
+   }
+   .result-container3 {
+       
+    left: 20px;
+    top: 100px;
+    width:300px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    margin-bottom: 50px;
+    margin-left:auto ;
+    margin-right: auto;
+}
+   .result-container h3 {
+       font-size: 16px;
+       margin-bottom: 10px;
+   }
+   .result-container ul {
+       list-style-type: none;
+       padding: 0;
+   }
+   .result-container li {
+       margin-bottom: 8px;
+   }
+   form {
+    display: block;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto; /* Center the form with some spacing */
+    padding: 20px;
+    max-width: 370px; /* Limit form width */
+    height: 450px;
+    text-align: center;
+    background-color: #f9f9f9; /* Soft background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+form label {
+    display: block;
+    font-size: 1.1em;
+    color: #333; /* Dark gray color for labels */
+    margin-bottom: 8px; /* Space between label and input */
+    font-weight: bold;
+}
+
+form input[type="text"] {
+    width: 60%; /* Full width input */
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    transition: border 0.3s ease; /* Smooth border transition */
+}
+
+form input[type="text"]:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+form input[type="submit"], form input[type="button"] {
+    background-color: #1b4965;/* Blue button */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 50%; /* Full-width button */
+}
+
+form input[type="submit"]:hover, form input[type="button"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight scaling effect on hover */
+}
+
+form input[type="submit"]:active, form input[type="button"]:active {
+    background-color: #00408d; /* Even darker blue when clicked */
+}
+
+form .button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+form .button-container input {
+    width:48%; /* Half-width buttons */
+    padding: 10px 0;
+}
+
+/* Optional: You can style the text in the form if you'd like */
+form p {
+    font-size: 1em;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Add a responsive design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+        width: 100%;
+    }
+
+    form .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form .button-container input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+   

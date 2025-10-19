@@ -1,0 +1,111 @@
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #1b4965;
+    font-weight: bold;
+    font-family: 'arial', serif;
+}
+
+input[type="text"] {
+    margin-bottom: 3px;
+    width: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #110101;
+    color: #070700;
+}
+
+input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #efe5dc;
+    color: #070700;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%; /* Set table width to 100% */
+    border-collapse: collapse;
+    border: 2px solid white;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 50px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    width: calc(100% / 9); /* Divide the table width equally among 9 columns */
+}
+
+th {
+    background-color: #1b4965;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: #1b4965;
+    font-size: 50px;
+    font-family: 'Prata', serif;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+.logo img {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 18px;
+    max-width: 14%; /* Adjust the width of the logo */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px;
+}
+
+body {
+    font-family: 'calibri', serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+@media print {
+    form {
+        display: none;
+    }
+    .container {
+        box-shadow: none !important;
+    }
+    table td:nth-child(10),
+    table th:nth-child(10) {
+        display: none; /* Hides the 9th column which is assumed to be "action" */
+    }
+}
+
+/* CSS for desktop screens */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px; /* Adjust as needed */
+    }
+}
